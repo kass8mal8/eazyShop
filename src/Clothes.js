@@ -1,6 +1,6 @@
 import React, {Link} from 'react'
 
-const Clothes=({ handleCartAddition})=>{
+const Clothes=({ count, setCount})=>{
   
   const images=
     [{src:"https://pngimg.com/uploads/jacket/jacket_PNG8057.png",
@@ -22,6 +22,11 @@ const Clothes=({ handleCartAddition})=>{
     name:"Shirt",
     price:99,
     id:4} ]
+    
+    const handleCartAddition=()=>{
+       setCount(count+1)
+    }
+    
   return(
     <div>
           <h3>Clothes</h3>

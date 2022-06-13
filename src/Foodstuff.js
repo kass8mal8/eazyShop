@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-const Foodstuff =({isShown,setIsShown, handleCartAddition})=>{
+const Foodstuff =({isShown,setIsShown,count,setCount})=>{
 const foods=
      [{src:"https://megawholesalers.co.ke/images/stories/virtuemart/product/PACK-EXE-All-Purpose-e1429515425104.png", 
       name:"Exe Flour",
@@ -34,6 +34,9 @@ const handleShown=()=>{
    .src=prod.getAttribute('src')
 }
 
+const handleCartAddition=()=>{
+   setCount(count+1)
+}
 
   return(
     <div className ="container">

@@ -3,7 +3,7 @@ import React,{useState } from 'react'
 import { faClose } from '@fortawesome/free-solid-svg-icons' 
 import {Link} from 'react-router-dom'
 
-const Smartphones=({handleCartAddition })=>{
+const Smartphones=({count, setCount})=>{
   const [isVisible, setIsVisible]=useState(false)
 
   const phones=
@@ -42,6 +42,10 @@ const Smartphones=({handleCartAddition })=>{
   
   const image="https://www.pakmobizone.pk/wp-content/uploads/2020/09/infinix-Hot-10-Ocean-Wave-5.jpg"
     
+   const handleCartAddition=()=>{
+      setCount(count+1)
+   }
+
 
   return (
     <div className="smartphones-container">

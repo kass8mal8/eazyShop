@@ -2,7 +2,7 @@ import React from 'react'
 import { faClose } from '@fortawesome/free-solid-svg-icons' 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const HomeAccessories=({ handleCartAddition })=>{
+const HomeAccessories=({ count,setCount })=>{
  
   const blacksneaker="https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/59/246303/1.jpg?7199"
 
@@ -22,6 +22,10 @@ const HomeAccessories=({ handleCartAddition })=>{
       document.querySelector('.product-page img').src=e
       document.querySelector('.product-page').classList.toggle('visible')
     
+  }
+  
+  const handleCartAddition=()=>{
+     setCount(count+1)
   }
 
   return (

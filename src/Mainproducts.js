@@ -8,9 +8,6 @@ const Mainproducts=({count,setCount})=>{
 
   const [isShown,setIsShown]=useState(true)
   
-  const handleCartAddition=()=>{
-     setCount(count+1)
-  }
   
   return(
     <div className="container">
@@ -26,21 +23,25 @@ const Mainproducts=({count,setCount})=>{
        <Clothes 
             isShown={isShown} 
             setIsShown={setIsShown}
-            handleCartAddition={handleCartAddition}/>
+            count={count}
+            setCount={setCount} />
        <Smartphones 
             isShown={isShown} 
             setIsShown={setIsShown}
-            handleCartAddition={handleCartAddition}/>
+            count={count} 
+            setCount={setCount} />
 
        <Foodstuff 
             isShown={isShown} 
             setIsShown={setIsShown}
-            handleCartAddition={handleCartAddition} />
+            count={count} 
+            setCount={setCount} />
 
        <HomeAccessories 
             isShown={isShown} 
             setIsShown={setIsShown}
-            handleCartAddition={handleCartAddition} />
+            count={count} 
+            setCount={setCount} />
     </div>   
   )
 }
