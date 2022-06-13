@@ -2,7 +2,7 @@ import React from 'react'
 import { faClose } from '@fortawesome/free-solid-svg-icons' 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const HomeAccessories=({count, setCount })=>{
+const HomeAccessories=({ handleCartAddition })=>{
  
   const blacksneaker="https://ng.jumia.is/unsafe/fit-in/680x680/filters:fill(white)/product/59/246303/1.jpg?7199"
 
@@ -35,7 +35,7 @@ const HomeAccessories=({count, setCount })=>{
                <br/>ksh 999
           </p>
           <button
-               onClick={()=>setCount(count+1)}>
+               onClick={handleCartAddition}>
                add to cart
           </button>
         </div>
@@ -43,7 +43,7 @@ const HomeAccessories=({count, setCount })=>{
           <img src={whitesneaker} />
           <p>White brand sneakers<br/>ksh 1199</p>
           <button 
-               onClick={()=>setCount(count+1)}>
+               onClick={handleCartAddition}>
                add to cart
           </button>
         </div>
@@ -51,7 +51,7 @@ const HomeAccessories=({count, setCount })=>{
           <img src={blacklady} />
           <p>Low heels ladies... <br/>ksh 525</p>
           <button 
-               onClick={()=>setCount(count+1)}>
+               onClick={handleCartAddition}>
                add to cart 
           </button>
         </div>
@@ -61,7 +61,7 @@ const HomeAccessories=({count, setCount })=>{
                <br/>ksh 599
           </p>
           <button
-               onClick={()=>setCount(count+1)}>
+               onClick={handleCartAddition}>
                add to cart
           </button>
         </div>

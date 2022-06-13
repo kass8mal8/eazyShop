@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-const Foodstuff =({count, setCount,isShown,setIsShown})=>{
+const Foodstuff =({isShown,setIsShown, handleCartAddition})=>{
 const foods=
      [{src:"https://megawholesalers.co.ke/images/stories/virtuemart/product/PACK-EXE-All-Purpose-e1429515425104.png", 
       name:"Exe Flour",
@@ -25,9 +25,6 @@ const foods=
       
 const image="https://cdn.shopify.com/s/files/1/1144/7088/files/RUSEEN_Reflective_Apparel-Reflective_Shirt-Unisex-Polyester-Birdseye_Knit-Orange-Long_Sleeve-Reflective_Running_Gear-Reflective_Clothing-Blank-Front.png?1469418611344383116"
 
-const handleCount =()=>{
-   setCount (count+1)
-}
 
 const handleShown=()=>{
    setIsShown(false)
@@ -52,7 +49,7 @@ const handleShown=()=>{
              <br/>ksh {food.price}
          </p>
          <button 
-            onClick ={()=>setCount(count+1)}>
+            onClick ={handleCartAddition}>
             add to cart
          </button>
       </div>

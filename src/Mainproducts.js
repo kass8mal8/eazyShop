@@ -8,6 +8,10 @@ const Mainproducts=({count,setCount})=>{
 
   const [isShown,setIsShown]=useState(true)
   
+  const handleCartAddition=()=>{
+     setCount(count+1)
+  }
+  
   return(
     <div className="container">
       {count > 0 &&
@@ -20,27 +24,23 @@ const Mainproducts=({count,setCount})=>{
          <p>Discounts up to 50% off</p>
        </section>
        <Clothes 
-            count={count} 
-            setCount={setCount} 
             isShown={isShown} 
-            setIsShown={setIsShown}/>
+            setIsShown={setIsShown}
+            handleCartAddition={handleCartAddition}/>
        <Smartphones 
-            count={count} 
-            setCount={setCount} 
             isShown={isShown} 
-            setIsShown={setIsShown}/>
+            setIsShown={setIsShown}
+            handleCartAddition={handleCartAddition}/>
 
        <Foodstuff 
-            count={count}  
-            setCount ={setCount} 
             isShown={isShown} 
-            setIsShown={setIsShown}/>
+            setIsShown={setIsShown}
+            handleCartAddition={handleCartAddition} />
 
        <HomeAccessories 
-            count={count} 
-            setCount={setCount} 
             isShown={isShown} 
-            setIsShown={setIsShown}/>
+            setIsShown={setIsShown}
+            handleCartAddition={handleCartAddition} />
     </div>   
   )
 }

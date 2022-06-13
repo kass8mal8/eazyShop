@@ -1,6 +1,6 @@
 import React, {Link} from 'react'
 
-const Clothes=({count,setCount})=>{
+const Clothes=({ handleCartAddition})=>{
   
   const images=
     [{src:"https://pngimg.com/uploads/jacket/jacket_PNG8057.png",
@@ -35,7 +35,7 @@ const Clothes=({count,setCount})=>{
              <br/>ksh {image.price}
          </p>
 
-         <button onClick={()=>setCount(count+1)}>
+         <button onClick={handleCartAddition}>
                add to cart
          </button>
       </div>

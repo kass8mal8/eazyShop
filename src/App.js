@@ -18,7 +18,6 @@ const App =()=>{
   
 
   const handleCart=()=>{
-     alert('hello world')
      document.querySelector('.cart-content ').classList.toggle('show') 
   }
   

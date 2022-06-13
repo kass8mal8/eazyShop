@@ -3,7 +3,7 @@ import React,{useState } from 'react'
 import { faClose } from '@fortawesome/free-solid-svg-icons' 
 import {Link} from 'react-router-dom'
 
-const Smartphones=({count, setCount})=>{
+const Smartphones=({handleCartAddition })=>{
   const [isVisible, setIsVisible]=useState(false)
 
   const phones=
@@ -57,7 +57,7 @@ const Smartphones=({count, setCount})=>{
             </p>
             
             <button 
-            onClick={()=>setCount(count+1)}>
+            onClick={handleCartAddition}>
                add to cart
             </button>
          </div>
