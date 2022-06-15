@@ -6,6 +6,7 @@ body{
 a{
   text-decoration: none;
   color:black;
+  padding: 3px;
 }
 .sign-icons{
   color: hsl(25, 100%, 65%);
@@ -92,64 +93,63 @@ form label{
   margin-top: -3px;
 }
 .avatar{
-  position: absolute;
-  right: 10px;
-  top:16px;
-  height: 30px;
-  width: 30px;
-  border-radius: 40px;
+   position: absolute;
+   right: 10px;
+   top:16px;
+   height: 30px;
+   width: 30px;
+   border-radius: 40px;
 }
 .top-nav{
-  align-items: center;
-  margin-top: -21px;
-  margin-left: 10px;
+   align-items: center;
+   margin-top: -21px;
+   margin-left: 10px;
 }
 .top-nav--wrapper li{
-
-    margin-right: 20px;
-    list-style: none;
-    display:inline-flex;
-    align-items: center;
-    font-size: 22px;
+   margin-right: 20px;
+   list-style: none;
+   display:inline-flex;
+   align-items: center;
+   font-size: 22px;
 }
 .top-nav--close{
-  display: none;
-  height: 25px;
+   display: none;
+   height: 25px;
 }
 /*Smartphones styles*/
 
 .container{
-  width: 95%;
-  margin:auto 10px;
+   width: 95%;
+   margin:auto 10px;
 }
 .cart-content.show{
-  position: absolute;
-  top: 70px;
-  width: 90%;
-  left: 5%;
-  height: 35%;
-  padding:5px;
-  background: white;
-  border-radius: 3px;
-  border: 1px solid whitesmoke;
-  z-index: 2;
-  display:block;
+     position: absolute;
+     top: 70px;
+     width: 90%;
+     left: 5%;
+     height: 35%;
+     padding:5px;
+     background: white;
+     border-radius: 3px;
+     border: 1px solid whitesmoke;
+     z-index: 2;
+     display:block;
 }
 .cart-content{
   display:none;
 }
 .container small{
-  background: hsl(25, 100%, 60%);
-  padding: 3px;
-  font-size:x-small;
-  border-radius: 20px;
-  position: absolute;
-  top: 15px;right: 47px;
-  width: 10px;
-  height: 10px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+     background: hsl(25, 100%, 60%);
+     padding: 3px;
+     font-size:x-small;
+     border-radius: 20px;
+     position: absolute;
+     top: 15px;right: 47px;
+     width: 10px;
+     height: 10px;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
 }
 .container section{
   background:hsl(25, 100%, 75%);
@@ -487,7 +487,7 @@ h3{
   }
   .method-selection button{
       width: 59%;
-      margin-left: 5%
+      margin-left: 5%;
   }
   .google-btn {
      margin-left: 23.5%;

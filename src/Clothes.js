@@ -24,7 +24,8 @@ const Clothes=({ count, setCount})=>{
     id:4} ]
     
     const handleCartAddition=()=>{
-       setCount(count+1)
+       //setCount(count+1)
+       alert('hello world')
     }
     
   return(
